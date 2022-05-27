@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+background-color: #F4F3EE;
+}
+
+h1 {
+    text-align: center;
+    color: #463F3A;
+}
+
+#grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60vh;
+    height: 40vh;
+    margin-left: 75vh;
+}
+
+.cells {
+    width: 20vh;
+    height: 20vh;
+    border: 2px solid #463F3A;
+}
