@@ -1,26 +1,73 @@
 * {
     box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --winning-blocks: #415D43
 }
 
 body {
-background-color: #F4F3EE;
+    background-color: #A1CCA5;
 }
 
 h1 {
     text-align: center;
-    color: #463F3A;
+    color: #415D43;
 }
 
-#grid {
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#board {
     display: flex;
     flex-wrap: wrap;
     width: 60vh;
-    height: 40vh;
-    margin-left: 75vh;
+    height: 60vh;
+    margin-top: 20px;
 }
 
 .cells {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 20vh;
     height: 20vh;
-    border: 2px solid #463F3A;
+    border-right: 2px solid #111D13;
+    border-bottom: 2px solid #111D13;
+    font-size: 100px;
+    cursor: pointer;
 }
+
+.cells:nth-child(3n) {
+    border-right: none;
+}
+
+.cells:nth-child(6) ~ .cells {
+    border-bottom: none;
+}
+
+#reset {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.player_x,
+.player_o {
+    color: #111D13;
+}
+
+
+
+
